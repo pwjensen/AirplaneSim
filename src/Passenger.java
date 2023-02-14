@@ -10,6 +10,7 @@ public class Passenger extends Person {
 
 	public void purchaseTicket() {
 		Ticket ticket = new Ticket();
+		tickets.add(ticket);
 		System.out.println("Your ticket number is: " + ticket.getTicket());
 	}
 
