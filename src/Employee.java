@@ -8,4 +8,12 @@ public class Employee extends Person {
 	public void clockOut() {
 
 	}
+
+	public void setSocial(int setId) {
+		ssn = setId;
+	}
+
+	public int getSocial() {
+		return ssn;
+	}
 }
