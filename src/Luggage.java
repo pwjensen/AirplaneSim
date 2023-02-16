@@ -10,7 +10,11 @@ public class Luggage {
 		return luggageNum;
 	}
 
-	public void setLuggageWeight() {
+	public void setLugWeight(int weight) {
+		luggageWeight = weight;
+	}
 
+	public int getLugWeight() {
+		return luggageWeight;
 	}
 }
