@@ -1,5 +1,5 @@
 public class Kiosk extends CheckInMachine {
-
+	// Ask about attributes for this class if the parent class already has the id
 	public Kiosk(int i) {
 		machId = i;
 	}

@@ -5,6 +5,8 @@ public class Ticket {
 		return ticketNum;
 	}
 
+	// Check if this is correct
+	//
 	public Ticket() {
 		ticketNum = ticketNum + 1;
 	}

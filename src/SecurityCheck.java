@@ -1,8 +1,10 @@
 import java.util.Random;
 
 public class SecurityCheck {
+	private int checkedPassengers;
 
 	public void checkPerson(Passenger pass) {
+		checkedPassengers++;
 		boolean goodPerson = checkSafety();
 
 		if (!goodPerson) {
@@ -14,7 +16,7 @@ public class SecurityCheck {
 
 	private boolean checkSafety() {
 		Random rand = new Random();
-		int upperbound = 116394; // In 2022m TSA found that 1 in every 116,394 travelers were carrying firearms
+		int upperbound = 116394; // In 2022, TSA found that 1 in every 116,394 travelers were carrying firearms
 		int random = rand.nextInt(upperbound);
 
 		if (random == 1) {
@@ -23,5 +25,9 @@ public class SecurityCheck {
 			return true;
 		}
 
+	}
+
+	public int getCheckedPassengers() {
+		return checkedPassengers;
 	}
 }

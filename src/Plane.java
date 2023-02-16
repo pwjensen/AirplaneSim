@@ -1,7 +1,7 @@
 public class Plane {
 	private int planeId;
-	protected int passCount;
 	private String destination;
+	// array of passengers???
 
 	public Plane(int iD) {
 		planeId = iD;

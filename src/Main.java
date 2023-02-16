@@ -37,3 +37,6 @@ public class Main {
 
     }
 }
+
+// ask about what the recording of the simulation should be
+// why am i answering the same question in all three parts of the document

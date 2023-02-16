@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Passenger extends Person {
 	private int phone;
 	private ArrayList<Ticket> tickets = new ArrayList<Ticket>();
+	private ArrayList<Luggage> luggage = new ArrayList<Luggage>();
 
 	public Passenger(String name, int cell) {
 		phone = cell;
@@ -22,4 +23,9 @@ public class Passenger extends Person {
 	public int getPhone() {
 		return phone;
 	}
+
+	// add luggage methods
+
+	// add ticket methods
+
 }
