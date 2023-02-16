@@ -1,11 +1,16 @@
 public class Luggage {
-	private int luggageId;
+	private int luggageNum;
+	private int luggageWeight;
 
-	public void setId(int iD) {
-		luggageId = iD;
+	public Luggage() {
+		luggageNum = luggageNum + 1;
 	}
 
-	public int getId() {
-		return luggageId;
+	public int getLuggage() {
+		return luggageNum;
+	}
+
+	public void setLuggageWeight() {
+
 	}
 }

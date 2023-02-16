@@ -1,11 +1,12 @@
+import java.util.ArrayList;
+
 public class Passenger extends Person {
 	private int phone;
-	private Luggage[] luggage;
-	private Ticket[] tickets;
-	private int ticketCount;
+	private ArrayList<Ticket> tickets = new ArrayList<Ticket>();
 
-	public void checkIn() {
-
+	public Passenger(String name, int cell) {
+		phone = cell;
+		this.name = name;
 	}
 
 	public void purchaseTicket() {
@@ -14,11 +15,11 @@ public class Passenger extends Person {
 		System.out.println("Your ticket number is: " + ticket.getTicket());
 	}
 
-	public void checkBag() {
-
+	public void setPhone(int cell) {
+		phone = cell;
 	}
 
-	public void pickBag() {
-
+	public int getPhone() {
+		return phone;
 	}
 }

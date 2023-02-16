@@ -3,6 +3,10 @@ public class Plane {
 	protected int passCount;
 	private String destination;
 
+	public Plane(int iD) {
+		planeId = iD;
+	}
+
 	public void setId(int iD) {
 		planeId = iD;
 	}

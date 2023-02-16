@@ -1,3 +1,10 @@
+import java.util.ArrayList;
+
 public class ClerkDesk extends CheckInMachine {
-	private Employee[] employees;
+	private ArrayList<Employee> employeesWorking = new ArrayList<Employee>();
+
+	public ClerkDesk(int i) {
+		machId = i;
+	}
+
 }

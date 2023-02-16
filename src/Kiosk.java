@@ -1,8 +1,12 @@
 public class Kiosk extends CheckInMachine {
-	private int checkedCount;
+
+	public Kiosk(int i) {
+		machId = i;
+	}
 
 	public void checkIn(Passenger pass) {
-		checkedCount++;
-		System.out.println("Welcome! You are the " + checkedCount + "passenger today!");
+		checkedInPassengers.add(pass);
+		System.out.println("Welcome! You are the " + checkedInPassengers.size() + "passenger today!");
+
 	}
 }
