@@ -1,13 +1,11 @@
 public class Ticket {
 	private int ticketNum;
 
-	public int getTicket() {
-		return ticketNum;
+	public Ticket(int num) { // Constructor for the ticket
+		ticketNum = num;
 	}
 
-	// Check if this is correct
-	//
-	public Ticket() {
-		ticketNum = ticketNum + 1;
+	public int getTicket() { // Returns the ticket number
+		return ticketNum;
 	}
 }

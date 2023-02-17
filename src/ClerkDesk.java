@@ -1,13 +1,17 @@
-import java.util.ArrayList;
+public class ClerkDesk extends CheckInMachine { // Inherits all protected and public methods/attributes from parent
+												// class
+	private String employeeCurrentlyWorking;
 
-public class ClerkDesk extends CheckInMachine {
-	// How to get this to work the way I want it to
-	private ArrayList<Employee> employeesWorking = new ArrayList<Employee>();
-
-	public ClerkDesk(int i) {
+	public ClerkDesk(int i) { // Constructor for ClerkDesk
 		machId = i;
 	}
 
-}
+	public void setEmployeeWorking(Employee emp) { // Sets the current employee working at the Clerk Desk
+		employeeCurrentlyWorking = emp.getName();
+	}
 
-// association or aggregation with passenger/employee because of parent class?
+	public String getEmployeeWorking() { // Returns the current employee working at the ClerkDesk
+		return employeeCurrentlyWorking;
+	}
+
+}

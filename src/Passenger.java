@@ -1,31 +1,38 @@
 import java.util.ArrayList;
 
-public class Passenger extends Person {
+public class Passenger extends Person { // Inherits all protected and public methods/attributes from parent
 	private int phone;
-	private ArrayList<Ticket> tickets = new ArrayList<Ticket>();
-	private ArrayList<Luggage> luggage = new ArrayList<Luggage>();
+	private ArrayList<Ticket> tickets = new ArrayList<Ticket>(); // Array of Tickets owned by the passenger
+	private ArrayList<Luggage> luggage = new ArrayList<Luggage>(); // Array of luggage the Passenger owns
 
-	public Passenger(String name, int cell) {
+	public Passenger(String name, int cell) { // Constructor for passenger
 		phone = cell;
 		this.name = name;
 	}
 
-	public void purchaseTicket() {
-		Ticket ticket = new Ticket();
-		tickets.add(ticket);
-		System.out.println("Your ticket number is: " + ticket.getTicket());
+	public void purchaseTicket(Ticket tix) { // Adds a ticket to the Passengers belongings
+		tickets.add(tix);
+		System.out.println("Your ticket number is: " + tix.getTicket());
 	}
 
-	public void setPhone(int cell) {
+	public Ticket getTicket(int ticket) { // Return ticket at given index of the array
+		return tickets.get(ticket);
+	}
+
+	public void setPhone(int cell) { // Sets passengers phone number
 		phone = cell;
 	}
 
-	public int getPhone() {
+	public int getPhone() { // Returns passengers phone number
 		return phone;
 	}
 
-	// add luggage methods
+	public void addLuggage(Luggage newLuggage) { // Add luggage to the
+		luggage.add(newLuggage);
+	}
 
-	// add ticket methods
+	public Luggage getLuggage(int num) { // Return luggage at given index of the array
+		return luggage.get(num);
+	}
 
 }

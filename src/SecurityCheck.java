@@ -1,9 +1,10 @@
 import java.util.Random;
 
-public class SecurityCheck {
+public class SecurityCheck extends Machine { // Inherits all protected and public methods/attributes from parent
 	private int checkedPassengers;
 
-	public void checkPerson(Passenger pass) {
+	public void checkPerson(Passenger pass) { // Checks a person in the security machine, calls checkSafety() to
+												// determine safety.
 		checkedPassengers++;
 		boolean goodPerson = checkSafety();
 
@@ -14,7 +15,8 @@ public class SecurityCheck {
 		}
 	}
 
-	private boolean checkSafety() {
+	private boolean checkSafety() { // Thjs is called to determine whether a person is carrying any firearm when
+									// getting checked.
 		Random rand = new Random();
 		int upperbound = 116394; // In 2022, TSA found that 1 in every 116,394 travelers were carrying firearms
 		int random = rand.nextInt(upperbound);
@@ -27,7 +29,7 @@ public class SecurityCheck {
 
 	}
 
-	public int getCheckedPassengers() {
+	public int getCheckedPassengers() { // Returns the number of passengers who have been through the security check
 		return checkedPassengers;
 	}
 }

@@ -1,10 +1,10 @@
-public class Kiosk extends CheckInMachine {
-	// Ask about attributes for this class if the parent class already has the id
-	public Kiosk(int i) {
+public class Kiosk extends CheckInMachine { // Inherits all protected and public methods/attributes from parent
+
+	public Kiosk(int i) { // Constructor for the Kiosk
 		machId = i;
 	}
 
-	public void checkIn(Passenger pass) {
+	public void checkIn(Passenger pass) { // Override for the checkIn method inhereted from CheckInMachine
 		checkedInPassengers.add(pass);
 		System.out.println("Welcome! You are the " + checkedInPassengers.size() + "passenger today!");
 
