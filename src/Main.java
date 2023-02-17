@@ -25,7 +25,7 @@ public class Main {
 
         Passenger p2 = new Passenger("Newton", 456789100);
         p2.purchaseTicket(new Ticket(2));
-        p2.addLuggage(new Luggage("Blue", p2.getTicket(1))); // Adds a new luggage to the passenger that has the same
+        p2.addLuggage(new Luggage("Blue", p2.getTicket(0))); // Adds a new luggage to the passenger that has the same
                                                              // number as their ticket
         p2.getPhone(); // Returns the passengers phone number
 
