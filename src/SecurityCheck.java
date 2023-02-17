@@ -3,6 +3,10 @@ import java.util.Random;
 public class SecurityCheck extends Machine { // Inherits all protected and public methods/attributes from parent
 	private int checkedPassengers;
 
+	public SecurityCheck(int iD) {
+		machId = iD;
+	}
+
 	public void checkPerson(Passenger pass) { // Checks a person in the security machine, calls checkSafety() to
 												// determine safety.
 		checkedPassengers++;

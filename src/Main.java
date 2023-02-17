@@ -45,7 +45,7 @@ public class Main {
         port1.setName("Abington Airlines"); // Set airport name
         port1.addClerkDesk(new ClerkDesk(1)); // Create and add a Clerk Desk to the Airport
         port1.addKiosk(new Kiosk(1)); // Create and add a Kiosk to the Airport
-        port1.addSecurity(new SecurityCheck()); // Create and add a Security Check machine to the Airport
+        port1.addSecurity(new SecurityCheck(1)); // Create and add a Security Check machine to the Airport
         port1.addPlane(plane1); // Add plane to Airport
         port1.addPlane(plane2); // Add plane to Airport
         port1.addEmployee(e1); // Add employee to Airport

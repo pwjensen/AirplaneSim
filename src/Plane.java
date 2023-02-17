@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Plane {
 	private int planeId;
 	private String destination;
-	ArrayList<Passenger> passengers = new ArrayList<Passenger>(); // Array of passengers attending the flight
+	private ArrayList<Passenger> passengers = new ArrayList<Passenger>(); // Array of passengers attending the flight
 
 	public Plane(int iD) { // Constructor for the Plane
 		planeId = iD;
